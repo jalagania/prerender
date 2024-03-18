@@ -1,0 +1,21 @@
+.attribution {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  color: var(--red);
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 425px) {
+  .attribution {
+    font-size: 1.3rem;
+  }
+}

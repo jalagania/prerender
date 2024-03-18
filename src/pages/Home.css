@@ -1,0 +1,63 @@
+.trending-container {
+  position: relative;
+  overflow-x: scroll;
+
+  display: flex;
+  gap: 3rem;
+}
+
+.trending-container::-webkit-scrollbar {
+  height: 0.8rem;
+}
+
+.trending-container::-webkit-scrollbar-track {
+  border-radius: 1rem;
+  background: hsla(223, 23%, 46%, 0.3);
+}
+
+.trending-container::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--red);
+}
+
+.trending-container .thumbnail-box {
+  width: 43rem;
+}
+
+.trending .movie-info-box {
+  margin-left: 2.5rem;
+  position: absolute;
+  bottom: 2.5rem;
+}
+
+.trending .movie-title {
+  font-size: 2.4rem;
+}
+
+.trending .movie-info {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 425px) {
+  .trending-container {
+    gap: 2rem;
+  }
+
+  .trending-container .thumbnail-box {
+    width: 25rem;
+  }
+
+  .trending .movie-info-box {
+    width: 70%;
+    margin-left: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .trending .movie-info {
+    font-size: 1.3rem;
+  }
+
+  .trending .movie-title {
+    font-size: 1.6rem;
+  }
+}

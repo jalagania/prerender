@@ -1,0 +1,12 @@
+{
+  "buildDirectory": "./build",
+  "engine": {
+    "launchOptions": {
+      "args": ["--no-sandbox", "--disable-setuid-sandbox"],
+      "product": "chrome",
+      "headless": true,
+      "ignoreHTTPSErrors": true
+    }
+  },
+  "routes": ["/", "/movies", "/tv-series", "/bookmarks"]
+}

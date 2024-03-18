@@ -1,0 +1,111 @@
+.thumbnail {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.thumbnail-box {
+  border-radius: 0.8rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.thumbnail-box:hover .btn-play {
+  display: flex;
+}
+
+.bookmark {
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: hsla(223, 30%, 9%, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  transition: all 0.2s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmark-icon {
+  stroke: white;
+}
+
+.bookmarked-icon {
+  fill: white;
+}
+
+.bookmark:hover {
+  background-color: white;
+}
+
+.bookmark:hover .bookmark-icon {
+  stroke: black;
+}
+
+.bookmark:hover .bookmarked-icon {
+  fill: black;
+}
+
+.btn-play {
+  color: white;
+  padding: 1rem;
+  background-color: hsla(0, 0%, 100%, 0.25);
+  border-radius: 5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.play-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-right: 1.5rem;
+}
+
+.movie-info {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 0.5rem;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.category-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.movie-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .thumbnail-box:hover .btn-play {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .movie-info {
+    font-size: 1.1rem;
+  }
+
+  .movie-title {
+    font-size: 1.4rem;
+  }
+}
